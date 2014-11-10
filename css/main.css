@@ -71,7 +71,6 @@ width: 306px;
 }
 
 .navbar .cardbox{
-	display: block;
 	position: absolute;
 	right: 137px;
 	top: 50px;
@@ -94,12 +93,26 @@ width: 306px;
 	cursor: pointer;
 	background: #723B08;
 	width: 120px;
-	padding: 0 15px;
 	text-align: center;
 	margin: 2px auto;
 	color: #fff;
 	border-radius:40%;
 	font-size: 16px;
+}
+
+.navbar__orderbutton {
+  cursor: pointer;
+  vertical-align: bottom;
+  background: #FFFFFF;
+  width: 100%;
+  height: 32px;
+  bottom: 0;
+  color: #4E4E4D;
+  font-size: 16px;
+  padding-top: 6px;
+  margin-bottom: -30px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 
@@ -200,3 +213,180 @@ ul.social-foot li a{
 	color: #4E4E4D;
 }
 
+
+
+
+.msg {
+  margin: 20px 10px;
+}
+.alert {
+  display: none;
+}
+/*модальное окно*/
+.btn__order {
+  background-color: #899395;
+  border: 1px solid #899395;
+}
+.modal-body {
+  padding: 0 20px 10px;
+  background: url('../../static/img/common/cart_bg_dark.png') repeat;
+}
+.modal-body h4 {
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  font-family: "open_sans_condensedbold";
+  color: #00778c;
+}
+.modal-body .input-group {
+  max-width: 160px;
+  padding-left: 15px;
+}
+.modal-body input {
+  max-width: 200px;
+}
+.modal-body .control-label {
+  font-family: "open_sans_condensedbold";
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.modal-header {
+  font-family: "open_sans_condensedbold";
+  color: #00778c;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.modal-footer {
+  border-top: none;
+  padding-top: 15px;
+}
+.modal-content {
+  background: url('../../static/img/common/cart_bg_light.png') repeat;
+}
+.modal-footer .btn {
+  font-family: "open_sans_condensedbold";
+  color: #00778c;
+  font-size: 18px;
+}
+.modal-body .wrapp {
+  font-family: "open_sans_condensedbold";
+  color: #00778c;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: .25em;
+  margin: 10px auto 20px;
+  border: 1px dashed #00778c;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+  padding: 15px 0 0;
+}
+.modal-body .text-in {
+  font-family: "open_sans_condensedbold";
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+  float: left;
+  padding-top: 6px;
+}
+.modal-body .text-in .x {
+  color: #DB7264;
+  font-family: arial;
+  font-weight: bold;
+  padding: 0 6px;
+}
+.modal-body .ui-spinner {
+  float: left;
+}
+.modal-body .done-box {
+  font-size: 120%;
+  padding: 20px 0 10px;
+}
+
+/*Продукция рестайлинг*/
+.thumbnail p {
+text-align: center;
+color: #4E4E4D;
+font-size: 18px;
+margin-bottom: 5px;
+}
+
+.ui-spinner {
+  border: none;
+  background: transparent;
+}
+.ui-spinner-input {
+  border: 1px solid #006b7e;
+  color: #006b7e;
+  background-color: #fff;
+  padding: 0 2px 0 12px;
+  border-radius: 6px;
+  width: 34px;
+  margin: 0.2em;
+  float: left;
+}
+.ui-spinner-up {
+  background: url("../img/top.png");
+  border: none 
+}
+.ui-icon,
+.ui-icon-triangle-1-n,
+.ui-button-text {
+  display: none;
+}
+.ui-spinner-down {
+  background: url("../img/down.png");
+  border: none ;
+}
+.ui-spinner-up:hover,
+.ui-spinner-down:hover {
+  cursor: pointer;
+}
+.ui-spinner-button {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  float: left;
+  margin: 4px;
+}
+.ui-spinner-button:active {
+  margin-top: 0.5em;
+}
+/*Продукция рестайлинг*/
+
+/* e-mail block */
+.e-mail-text {
+  padding-left: 390px;
+  padding-top: 4px;
+}
+.e-mail-text .e-mail-text_input {
+  height: 28px;
+  width: 218px;
+  font-family: "MyriadPro-Regular";
+  color: #727272;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 8px;
+}
+.submit__button {
+  padding-left: 446px;
+  padding-top: 18px;
+}
+.submit__button .submit__button_prop {
+  height: 38px;
+  width: 108px;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  border-radius: 19px;
+  background-color: #50ac44;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.19), inset 0 2px rgba(255, 255, 255, 0.5), inset 0 0 5px rgba(255, 255, 255, 0.31);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.19), inset 0 2px rgba(255, 255, 255, 0.5), inset 0 0 5px rgba(255, 255, 255, 0.31);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.19), inset 0 2px rgba(255, 255, 255, 0.5), inset 0 0 5px rgba(255, 255, 255, 0.31);
+  border: solid 1px #3b8e31;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0));
+  font-family: "MyriadPro-Regular";
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.32);
+}
