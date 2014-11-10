@@ -9,7 +9,6 @@
     <meta name="description" itemprop="description" content="Кондитерская Cookiemix изготавливает детские, свадебные, корпоративные, праздничные торты,  и фруктовые букеты. Торты  на заказ Симферополь украсят любой праздник и подарят массу">
     <meta name="keywords" itemprop="keywords" content="Торты, торты на заказ, торты на заказ Симферополь, заказать торт Симферополь, заказ тортов Симферополь">
     <link rel="canonical" href="http://cookiemix.ru/">
-
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Bootstrap -->
@@ -18,8 +17,6 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/hover-min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-     
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,7 +31,7 @@
           <div class="container-fluid">
             <div class="container-fluid-panel">
               <!--Логотип-->
-              <a class="logo rotate" title="Cookiemix | Торты на заказ Симферополь"href="http://cookiemix.ru/">&nbsp;</a>
+              <a class="logo pop" title="Cookiemix | Торты на заказ Симферополь"href="http://cookiemix.ru/">&nbsp;</a>
               <!--Телефон-->
               <div class="phone">
                       <span class="glyphicon glyphicon-earphone"></span>&nbsp;
@@ -45,19 +42,19 @@
                       </div>
               </div>
               <!--Корзина-->
-              <div class="cardbox">
-                      <p class="status-box">
-                         <span class="glyphicon glyphicon-shopping-cart status"></span>&nbsp;
-                         <span id="status">Ваша корзина пуста</span>
-                      </p>
-                      <a data-toggle="modal" class="doit">
-                                <div class="navbar__orderbutton">
-                                    <p>Оформить заказ</p>
-                                </div>
-                            </a>
-              </div>
+              <div class="caption__cart">
+                        <p class="status-box">
+                           <span class="glyphicon glyphicon-shopping-cart status"></span>&nbsp;
+                           <span id="status">Ваша корзина пуста</span>
+                        </p>
+                        <a data-toggle="modal" class="doit">
+                                  <div class="navbar__orderbutton">
+                                      <p>Оформить заказ</p>
+                                  </div>
+                              </a>
+                      </div>
+                 </div>
             </div>
-          </div>
         </nav>
 
         <!-- Окно заказа -->
@@ -75,7 +72,7 @@
                     <div id="order" class="wrapp">
                       <!-- сюда приходят заказы -->
                     </div>
-                    <h4>Ваши данные</h4>
+                    <h4>Контактные данные для связи с Вами</h4>
                     <div class="wrapp">
                       <div class="form-group">
                         <label for="name" class="col-xs-3 control-label">фио</label>
@@ -99,8 +96,8 @@
                   </form>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
-                  <button type="submit" class="btn btn-warning btn__order" form="order-form">Заказать</button>
+                  <button type="button" class="btn btn-lg" data-dismiss="modal">Продолжить покупки</button>
+                  <button type="submit" class="btn btn-lg" form="order-form">Заказать</button>
                 </div>
             </div>
           </div>
@@ -119,31 +116,30 @@
         
             <div class="jumbotron">
           <div class="container">
-            <h1><strong><i>Cookiemix</i></strong> | Торты на заказ</h1>
+            <h1><strong><i>COOKIEMIX</i></strong> | Торты на заказ</h1>
             <p>Торты - несомненное и незаменимое украшение любого, даже самого скромного, торжества, а оригинальные, вкусные торты на заказ, безусловно, придадут мероприятию еще более неожиданный, веселый и праздничный колорит.</p>
-            <p><a class="btn btn-lg buzz" role="button">Выбрать!</a></p>
           </div>
         </div>
-        
+      
             <!--Информация-->
             <div class="container">
              <div class="row">
             <div class="fact">
             <div class="col-md-3 fact col-xs-3">
-              <a href="#kapka"><img src="img/keyky.png" alt="Капкейки" class="img-circle hover shadow"></a>
+              <img src="img/keyky.png" alt="Капкейки" class="img-circle "></a>
               <p>Капкейки</p>
             </div> 
             <div class="col-md-3 col-xs-3">
-              <a href="#cookies"><img src="img/cookie.png" alt="Печенье" class="img-circle hover shadow"></a>
+              <img src="img/cookie.png" alt="Печенье" class="img-circle "></a>
               <p>Печенье</p>
             </div>
             <div class="col-md-3 col-xs-3">
-              <a href="#torts"><img src="img/tort.png" alt="Торты" class="img-circle hover shadow"></a>
+              <img src="img/tort.png" alt="Торты" class="img-circle "></a>
               <p>Торты</p>
             </div>
             <div class="col-md-3 col-xs-3">
-              <a href="#"><img src="img/cart.png" alt="Оформить заказ" class="img-circle hover shadow"></a>
-              <p>Оформить заказ</p>
+              <img src="img/cart.png" alt="Оформить заказ" class="img-circle"></a>
+              <p>Под заказ</p>
             </div>
             </div>
            </div>   
@@ -151,11 +147,12 @@
 
             <!--Продукция-->
              <div class="container">
-        <div class="row" id="product-area">
+               <div class="row" id="product-area">
             <!--Рендер товаров происходит  здесь-->
           </div>
         </div>
-        
+             <!--Продукция-->
+
         <footer>
           <div class="container-fluid">
             <div class="row">
@@ -188,14 +185,15 @@
         </footer>
            </div>
       </div>
-      <!--ТОВАРЫ-->
+
+       <!--ТОВАРЫ-->
       <script id="blocks" type="text/x-handlebars-template">
       {{#each blocks}}
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <a name="kapka" href="#"><img src="img/{{alias}}.png" alt="капкейки .лось. ванильные с корицей" class="hover shadow"></a>
+                <img src="img/{{alias}}.png" alt="капкейки .лось. ванильные с корицей" class="img-radius">
                 <div class="caption">
-                    <h3>{{name}}</h3>
+                    <h3 class="caption-center">{{name}}</h3>
                     <p>{{price}}руб.</p>
                     <p>Цена за {{unit}}</p>
                     <p class="stokInput">
@@ -243,7 +241,6 @@
         </div>
       </div>
     </script>
-
 
     <!-- JS -->
       <script src="vendor/js/modernizr-2.8.3.js"></script>

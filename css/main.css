@@ -36,6 +36,7 @@ a:hover{
  	height: 210px;
  }
 
+/*Шапка сайта*/
 .navbar{
 	background: #9c693c;
 }
@@ -70,14 +71,17 @@ width: 306px;
 	color: #fff;
 }
 
-.navbar .cardbox{
-	position: absolute;
-	right: 137px;
-	top: 50px;
-	width: 250px;
+.caption__cart{
+  display: block;
+  position: absolute;
+  right: 148px;
+  top: 50px;
+  width: 250px
+  
 }
 
-.navbar .cardbox .status-box{
+
+.navbar .caption__cart .status-box{
 	cursor: pointer;
 	margin: 11px;
 	font-size: 18px;
@@ -109,12 +113,24 @@ width: 306px;
   bottom: 0;
   color: #4E4E4D;
   font-size: 16px;
-  padding-top: 6px;
+  padding-top: 2px;
   margin-bottom: -30px;
   text-align: center;
   border-radius: 4px;
+  border: 2px solid #DDAF83;
+  box-shadow: 0 0 0 2px rgba(255,255,255,1);
 }
 
+/* настройки для фиксированной корзины */
+.cart_fixed {
+  position: fixed;
+  z-index: 10;
+  top: 4px;
+  right: 15px;
+}
+/* настройки для фиксированной корзины */
+
+/*Шапка сайтаы*/
 
 .jumbotron{
 	box-shadow:0 1px 4px rgba(0,0,0,.3),0 0 40px rgba(0,0,0,.1)inset;
@@ -123,11 +139,15 @@ width: 306px;
 	background: #ebb345;
 }
 
-
-
 .btn{
-	background-color: #5F3007;
+	background-color: #0F7C81;
 	color: #fff;
+}
+.btn:hover{
+  opacity: .5;
+-webkit-transition: opacity;
+-webkit-transition-timing-function: ease-out;
+-webkit-transition-duration: 500ms;
 }
 
 .thumbnail img{
@@ -142,6 +162,14 @@ width: 306px;
 	-webkit-transition: opacity;
 	-webkit-transition-timing-function: ease-out;
 	-webkit-transition-duration: 500ms;
+}
+
+.caption-center{
+  text-align: center;
+}
+
+.img-radius{
+  border-radius: 6px;
 }
 
 .fact {
@@ -213,15 +241,15 @@ ul.social-foot li a{
 	color: #4E4E4D;
 }
 
-
-
-
+/*ошибка при отсутсутсвии товара*/
 .msg {
   margin: 20px 10px;
 }
 .alert {
   display: none;
 }
+/*ошибка при отсутсутсвии товара*/
+
 /*модальное окно*/
 .btn__order {
   background-color: #899395;
@@ -229,14 +257,13 @@ ul.social-foot li a{
 }
 .modal-body {
   padding: 0 20px 10px;
-  background: url('../../static/img/common/cart_bg_dark.png') repeat;
+  background: #FFBB32;
 }
 .modal-body h4 {
   padding-left: 15px;
   padding-top: 20px;
   padding-bottom: 0;
-  font-family: "open_sans_condensedbold";
-  color: #00778c;
+  color: #fff;
 }
 .modal-body .input-group {
   max-width: 160px;
@@ -246,13 +273,11 @@ ul.social-foot li a{
   max-width: 200px;
 }
 .modal-body .control-label {
-  font-family: "open_sans_condensedbold";
   text-transform: uppercase;
   font-size: 14px;
 }
 .modal-header {
-  font-family: "open_sans_condensedbold";
-  color: #00778c;
+  color: #fff;
   border-bottom: none;
   padding-bottom: 0;
 }
@@ -261,25 +286,18 @@ ul.social-foot li a{
   padding-top: 15px;
 }
 .modal-content {
-  background: url('../../static/img/common/cart_bg_light.png') repeat;
-}
-.modal-footer .btn {
-  font-family: "open_sans_condensedbold";
-  color: #00778c;
-  font-size: 18px;
+  background: #9C693C;
 }
 .modal-body .wrapp {
-  font-family: "open_sans_condensedbold";
-  color: #00778c;
+  color: #DDAF83;
   background: rgba(255, 255, 255, 0.8);
   border-radius: .25em;
   margin: 10px auto 20px;
-  border: 1px dashed #00778c;
+  border: 1px dashed #DDAF83;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
   padding: 15px 0 0;
 }
 .modal-body .text-in {
-  font-family: "open_sans_condensedbold";
   text-transform: uppercase;
   font-size: 14px;
   display: block;
@@ -287,7 +305,7 @@ ul.social-foot li a{
   padding-top: 6px;
 }
 .modal-body .text-in .x {
-  color: #DB7264;
+  color: #4E4E4D;
   font-family: arial;
   font-weight: bold;
   padding: 0 6px;
@@ -313,17 +331,17 @@ margin-bottom: 5px;
   background: transparent;
 }
 .ui-spinner-input {
-  border: 1px solid #006b7e;
+  border: 1px solid #DDAF83;
   color: #006b7e;
   background-color: #fff;
-  padding: 0 2px 0 12px;
+  padding: 0 2px 0 9px;
   border-radius: 6px;
   width: 34px;
   margin: 0.2em;
   float: left;
 }
 .ui-spinner-up {
-  background: url("../img/top.png");
+  background: url("../img/top.png") no-repeat;
   border: none 
 }
 .ui-icon,
@@ -332,7 +350,7 @@ margin-bottom: 5px;
   display: none;
 }
 .ui-spinner-down {
-  background: url("../img/down.png");
+  background: url("../img/down.png") no-repeat;
   border: none ;
 }
 .ui-spinner-up:hover,

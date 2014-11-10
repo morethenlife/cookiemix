@@ -281,8 +281,7 @@ button.ui-button::-moz-focus-inner {
 	font-size: 1em;
 }
 .ui-widget input {
-    font-family: "open_sans_condensedbold";
-    color: #006b7e;
+    color: #4E4E4D;
 }
 .ui-widget select,
 .ui-widget textarea,
@@ -292,7 +291,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-widget-content {
 	border: 1px solid #404040;
-	background: #ffffff url("../../../static/img/jqimg/ui-bg_gloss-wave_16_ffffff_500x100.png") 50% top repeat-x;
+	background: #ffffff;
 	color: #000000;
 }
 .ui-widget-content a {
@@ -300,7 +299,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-widget-header {
 	border: 1px solid #404040;
-	background: #888888 url("../../../static/img/jqimg/ui-bg_highlight-hard_15_888888_1x100.png") 50% 50% repeat-x;
+	background: #888888;
 	color: #ffffff;
 	font-weight: bold;
 }
@@ -313,8 +312,6 @@ button.ui-button::-moz-focus-inner {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	border: 1px solid #cccccc;
-	background: #adadad url("../../../static/img/jqimg/ui-bg_highlight-soft_35_adadad_1x100.png") 50% 50% repeat-x;
 	font-weight: normal;
 	color: #333333;
 }
@@ -330,8 +327,7 @@ button.ui-button::-moz-focus-inner {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-	border: 1px solid #dddddd;
-	background: #dddddd url("../../../static/img/jqimg/ui-bg_highlight-soft_60_dddddd_1x100.png") 50% 50% repeat-x;
+	opacity: .5;
 	font-weight: normal;
 	color: #000000;
 }
@@ -349,8 +345,6 @@ button.ui-button::-moz-focus-inner {
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	border: 1px solid #000000;
-	background: #121212 url("../../../static/img/jqimg/ui-bg_inset-soft_15_121212_1x100.png") 50% 50% repeat-x;
 	font-weight: normal;
 	color: #ffffff;
 }
@@ -367,7 +361,7 @@ button.ui-button::-moz-focus-inner {
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
 	border: 1px solid #404040;
-	background: #555555 url("../../../static/img/jqimg/ui-bg_highlight-hard_55_555555_1x100.png") 50% top repeat-x;
+	background: #555555;
 	color: #cccccc;
 }
 .ui-state-highlight a,
@@ -379,7 +373,7 @@ button.ui-button::-moz-focus-inner {
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
 	border: 1px solid #cd0a0a;
-	background: #fef1ec url("../../../static/img/jqimg/ui-bg_glass_95_fef1ec_1x400.png") 50% 50% repeat-x;
+	background: #fef1ec;
 	color: #cd0a0a;
 }
 .ui-state-error a,
@@ -413,39 +407,6 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-state-disabled .ui-icon {
 	filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
-}
-
-/* Icons
-----------------------------------*/
-
-/* states and images */
-.ui-icon {
-	width: 16px;
-	height: 16px;
-}
-.ui-icon,
-.ui-widget-content .ui-icon {
-	background-image: url("../../../static/img/jqimg/ui-icons_bbbbbb_256x240.png");
-}
-.ui-widget-header .ui-icon {
-	background-image: url("../../../static/img/jqimg/ui-icons_cccccc_256x240.png");
-}
-.ui-state-default .ui-icon {
-	background-image: url("../../../static/img/jqimg/ui-icons_666666_256x240.png");
-}
-.ui-state-hover .ui-icon,
-.ui-state-focus .ui-icon {
-	background-image: url("../../../static/img/jqimg/ui-icons_c98000_256x240.png");
-}
-.ui-state-active .ui-icon {
-	background-image: url("../../../static/img/jqimg/ui-icons_f29a00_256x240.png");
-}
-.ui-state-highlight .ui-icon {
-	background-image: url("../../../static/img/jqimg/ui-icons_aaaaaa_256x240.png");
-}
-.ui-state-error .ui-icon,
-.ui-state-error-text .ui-icon {
-	background-image: url("../../../static/img/jqimg/ui-icons_cd0a0a_256x240.png");
 }
 
 /* positioning */
@@ -658,14 +619,14 @@ button.ui-button::-moz-focus-inner {
 
 /* Overlays */
 .ui-widget-overlay {
-	background: #aaaaaa url("../../../static/img/jqimg/ui-bg_highlight-hard_40_aaaaaa_1x100.png") 50% top repeat-x;
+	background: #aaaaaa;
 	opacity: .3;
 	filter: Alpha(Opacity=30); /* support: IE8 */
 }
 .ui-widget-shadow {
 	margin: -8px 0 0 -8px;
 	padding: 8px;
-	background: #aaaaaa url("../../../static/img/jqimg/ui-bg_highlight-soft_50_aaaaaa_1x100.png") 50% top repeat-x;
+	background: #aaaaaa;
 	opacity: .2;
 	filter: Alpha(Opacity=20); /* support: IE8 */
 	border-radius: 8px;
