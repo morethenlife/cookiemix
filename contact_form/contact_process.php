@@ -162,7 +162,7 @@
 
         //Отправка почты мне
         $mailToMe = mail(
-         'zakaz@12-70.ru',
+         'roman.kopka@yandex.ru',
          //$email,
          $subject,
          $messageToMe,
